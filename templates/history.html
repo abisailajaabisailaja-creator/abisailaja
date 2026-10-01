@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegalEase - History</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .document {
+            border: 1px solid #ddd;
+            padding: 18px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .type {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .date {
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .empty {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #222;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>⚖️ LegalEase</h1>
+
+    <h2>Document History</h2>
+
+    {% if documents %}
+
+        {% for document in documents %}
+
+        <div class="document">
+
+            <div class="type">
+                {{ document[1] }}
+            </div>
+
+            <div class="date">
+                Created: {{ document[3] }}
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    {% else %}
+
+        <div class="empty">
+            No documents created yet.
+        </div>
+
+    {% endif %}
+
+
+    <a href="/">
+        ← Create New Document
+    </a>
+
+</div>
+
+</body>
+</html>

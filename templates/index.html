@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LegalEase - AI Legal Document Generator</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+        }
+
+        .navbar {
+            background: #111;
+            color: white;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px 45px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .documents {
+            max-width: 1000px;
+            margin: 20px auto 60px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .btn:hover {
+            background: #333;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: #111;
+            color: white;
+        }
+
+        .disclaimer {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            padding: 15px 20px;
+            background: #fff3cd;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+
+            .documents {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar {
+                padding: 18px 20px;
+            }
+
+            .nav-links a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        ⚖️ LegalEase
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/home">
+            Home
+        </a>
+
+        <a href="/history">
+            History
+        </a>
+
+        <a href="/logout">
+            Logout
+        </a>
+
+    </div>
+
+</nav>
+
+
+<section class="hero">
+
+    <h1>
+        AI-Powered Legal Documents
+    </h1>
+
+    <p>
+        Generate professional legal document drafts quickly
+        using AI-assisted technology.
+    </p>
+
+</section>
+
+
+<div class="documents">
+
+
+    <div class="card">
+
+        <h2>
+            📄 Employment Contract
+        </h2>
+
+        <p>
+            Create an employment agreement with employee,
+            company, role and other terms.
+        </p>
+
+        <a
+            class="btn"
+            href="/form?type=Employment%20Contract"
+        >
+            Create Document
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            🔐 NDA
+        </h2>
+
+        <p>
+            Generate a Non-Disclosure Agreement for
+            protecting confidential information.
+        </p>
+
+        <a
+            class="btn"
+            href="/form?type=NDA"
+        >
+            Create Document
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            🏠 Lease Agreement
+        </h2>
+
+        <p>
+            Create a basic lease agreement containing
+            property, rent and lease terms.
+        </p>
+
+        <a
+            class="btn"
+            href="/form?type=Lease%20Agreement"
+        >
+            Create Document
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            🎓 Internship Agreement
+        </h2>
+
+        <p>
+            Generate an internship agreement with
+            responsibilities, duration and terms.
+        </p>
+
+        <a
+            class="btn"
+            href="/form?type=Internship%20Agreement"
+        >
+            Create Document
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="disclaimer">
+
+    ⚠️ This application generates AI-assisted legal drafts
+    for informational purposes only. Please consult a
+    qualified legal professional before using any document.
+
+</div>
+
+
+<footer class="footer">
+
+    © 2026 LegalEase |
+    AI-Powered Legal Document Generator
+
+</footer>
+
+</body>
+</html>
